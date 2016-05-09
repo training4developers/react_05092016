@@ -32,7 +32,7 @@ Breaks:
 
 ## Setup Instructions
 
-1. Clone Repo
+1. Using Git, clone the class repository: https://github.com/training4developers/react_05092016.git
 
 2. From the terminal, change to the repository folder.
 
