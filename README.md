@@ -2,7 +2,7 @@
 
 ## Instructor
 
-Eric Greene [http://t4d.io](http://t4d.io)
+Eric Greene - [http://t4d.io](http://t4d.io)
 
 ## Schedule
 
@@ -12,9 +12,9 @@ Class:
 
 Breaks:
 - Morning: 10:25am - 10:35am
-  Lunch: Noon to 1pm
-	Afternoon #1: 2:15pm-2:25pm
-	Afternoon #2: 3:40pm-3:50pm
+- Lunch: Noon to 1pm
+- Afternoon #1: 2:15pm-2:25pm
+- Afternoon #2: 3:40pm-3:50pm
 
 ## Course Outline
 
