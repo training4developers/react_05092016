@@ -29,3 +29,28 @@ Breaks:
 - [WintellectNOW](https://www.wintellectnow.com/) - Special Offer Code: GREENE-2016
 - [You Don't Know JS](https://github.com/getify/You-Dont-Know-JS)
 - [React Blog Posts](https://github.com/training4developers/react-flux-blog)
+
+## Setup Instructions
+
+1. Clone Repo
+
+2. From the terminal, change to the repository folder.
+
+3. From the terminal, run the following commands:
+
+```bash
+$ npm -i
+
+$ npm i -g gulp eslint eslint-config-airbnb eslint-plugin-react@^4.3.0 webpack babel-cli babel-eslint eslint-plugin-jsx-a11y@^0.6.2
+
+$ gulp
+```
+4. Open a new terminal window, change to the project folder.
+
+5. From the terminal, run the following command:
+
+```bash
+$ gulp server
+```
+
+6. Open a web browser, and navigate to http://localhost:3000
