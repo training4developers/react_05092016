@@ -2,7 +2,7 @@
 
 ## Instructor
 
-Eric Greene - [http://t4d.io](http://t4d.io)
+Eric Greene - [http://t4d.io](http://t4d.io) - [LinkedIn](https://www.linkedin.com/in/ericwgreene)
 
 ## Schedule
 
@@ -26,17 +26,19 @@ Breaks:
 
 - [Eric's Blog](http://t4d.io/)
 - [Accelebrate's Blog](https://www.accelebrate.com/blog/)
-- [WintellectNOW](https://www.wintellectnow.com/) - Special Offer Code: GREENE-2016
+- [WintellectNOW](https://www.wintellectnow.com/Home/Instructor?instructorId=EricGreene) - Special Offer Code: GREENE-2016
 - [You Don't Know JS](https://github.com/getify/You-Dont-Know-JS)
 - [React Blog Posts](https://github.com/training4developers/react-flux-blog)
 
 ## Setup Instructions
 
-1. Using Git, clone the class repository: https://github.com/training4developers/react_05092016.git
+Prerequisites: [Node.js](https://nodejs.org/en/) (version 4 or later) and [Git](https://git-scm.com/) need to be installed, if they are not already
 
-2. From the terminal, change to the repository folder.
+Step 1: Using Git, clone the class repository: https://github.com/training4developers/react_05092016.git
 
-3. From the terminal, run the following commands:
+Step 2: From the terminal, change to the repository folder.
+
+Step 3: From the terminal, run the following commands:
 
 ```bash
 $ npm i
@@ -45,12 +47,12 @@ $ npm i -g gulp eslint eslint-plugin-react webpack babel-cli babel-eslint
 
 $ gulp
 ```
-4. Open a new terminal window, change to the project folder.
+Step 4: Open a new terminal window, change to the project folder.
 
-5. From the terminal, run the following command:
+Step 5: From the terminal, run the following command:
 
 ```bash
 $ gulp server
 ```
 
-6. Open a web browser, and navigate to http://localhost:3000
+Step 6: Open a web browser, and navigate to http://localhost:3000
