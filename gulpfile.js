@@ -73,13 +73,6 @@ gulp.task('default', [
 	'process-web-app-html',
 	'process-web-app-css',
 	'process-web-app-js'
-]);
-
-gulp.task('default', [
-	'process-server-app',
-	'process-web-app-html',
-	'process-web-app-css',
-	'process-web-app-js'
 ], function () {
 
 	gulp.watch(entryPoints, ['process-web-app-js']);

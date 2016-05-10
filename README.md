@@ -39,9 +39,9 @@ Breaks:
 3. From the terminal, run the following commands:
 
 ```bash
-$ npm -i
+$ npm i
 
-$ npm i -g gulp eslint eslint-config-airbnb eslint-plugin-react@^4.3.0 webpack babel-cli babel-eslint eslint-plugin-jsx-a11y@^0.6.2
+$ npm i -g gulp eslint eslint-plugin-react webpack babel-cli babel-eslint
 
 $ gulp
 ```
