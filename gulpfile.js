@@ -8,6 +8,7 @@ const babel = require('gulp-babel');
 const sass = require('gulp-sass');
 
 const serverAppFiles = ['src/**/*.js','!src/www/**'];
+const webAppFiles = ['src/www/**/*.js'];
 const webAppHtmlFiles = ['src/www/**/*.html'];
 const webAppSassFiles = ['src/www/css/**/*.scss'];
 
@@ -45,6 +46,8 @@ gulp.task('process-web-app-js', () =>
 							loader: 'babel-loader',
 							exclude: /node_modules/,
 							query: {
+								// ADD PASS PER PRESET :)
+								passPerPreset: true,
 								presets: ['react', 'es2015']
 							}
 						}]
@@ -75,7 +78,7 @@ gulp.task('default', [
 	'process-web-app-js'
 ], function () {
 
-	gulp.watch(entryPoints, ['process-web-app-js']);
+	gulp.watch(webAppFiles, ['process-web-app-js']);
 	gulp.watch(webAppSassFiles, ['process-web-app-css']);
 	gulp.watch(webAppHtmlFiles, ['process-web-app-html']);
 	gulp.watch(serverAppFiles, ['process-server-app']);
