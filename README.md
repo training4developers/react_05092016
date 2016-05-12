@@ -24,11 +24,20 @@ Breaks:
 
 ## Links
 
+### Instructor's Resources
+
 - [Eric's Blog](http://t4d.io/)
-- [Accelebrate's Blog](https://www.accelebrate.com/blog/)
 - [WintellectNOW](https://www.wintellectnow.com/Home/Instructor?instructorId=EricGreene) - Special Offer Code: GREENE-2016
-- [You Don't Know JS](https://github.com/getify/You-Dont-Know-JS)
 - [React Blog Posts](https://github.com/training4developers/react-flux-blog)
+- [TopTal Angular Directive](https://www.toptal.com/angular-js/angular-js-demystifying-directives)
+- [React SitePoint](http://www.sitepoint.com/author/ericgreene/)
+- [JavaScript Blog Posts](https://www.accelebrate.com/blog/?s=Greene)
+
+### Other Resources
+
+- [Accelebrate's Blog](https://www.accelebrate.com/blog/)
+- [You Don't Know JS](https://github.com/getify/You-Dont-Know-JS)
+- [JavaScript Air Podcast](http://javascriptair.podbean.com/)
 
 ## Setup Instructions
 

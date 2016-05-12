@@ -7,18 +7,100 @@
 	</head>
 
 	<body>
-		<main></main>
+		<div ng-app="MyApp">
+			<div ng-controller="MyCtrl">
 
-		<form>
-			<label>
-				Message:
-				<input type="text" value="Sankar the Warrior" id="message">
-			</label>
-			<button type="button" id="click-me">Click Me</button>
-		</form>
+				<div my-dir></div>
+				<my-dir></my-dir>
 
 
-		<script src="js/index.js"></script>
+				<label>Color Filter: <input ng-model="colorFilter" type="text"></label>
+				<ul>
+					<li ng-repeat="color in colors | filter:colorFilter">{{color}}</li>
+				</ul>
+
+				<div>
+					<label>New Color: <input ng-model="newColor" type="text"></label>
+					<button ng-click="addColor()">Add Color</button>
+				</div>
+
+				<ul>
+					<li ng-repeat="car in cars">{{car.make}} - {{car.model}} - {{car.year}}</li>
+				</ul>
+
+				<input ng-model="showMe" type="checkbox"> Show Me
+				<div ng-show="showMe">
+					You can see me!
+				</div>
+
+			</div>
+		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.js"></script>
+		<!-- <script src="js/index.js"></script> -->
+		<script>
+
+		myCtrl.$inject = ["$log", "$scope"];
+
+		console.log(myCtrl.toString());
+
+		function myCtrl($log, $scope) {
+
+			$log.log("hi class!");
+
+			$scope.message = "Hi!";
+
+			// $scope.cars = [
+			// 	{ make: 'Tesla', model: 'S', year: 2016 },
+			// 	{ make: 'Ferrari', model: 'Testarosa', year: 1988 },
+			// 	{ make: 'Hummer', model: 'H1', year: 1990 },
+			// 	{ make: 'Mini Cooper', model: 'Mini Cooper', year: 2018 }
+			// ];
+			//
+			// $scope.colors = ['red','gold','green','white','saffron','blue','yellow', 'black', 'brown'];
+			//
+			// window.addColor = function() {
+			// 	$scope.colors.push($scope.newColor);
+			// 	$scope.$digest();
+			// 	console.log($scope);
+			// };
+
+			// $scope.$watch(function() {
+			//
+			// 	console.log("digest loop executed");
+			//
+			// 	var count = 1000000000;
+			// 	while (count--) {
+			// 		var t = count;
+			// 	}
+			//
+			//
+			// });
+
+		}
+
+
+			angular.module("MyApp", [])
+				.directive("myDir", function() {
+
+					// directive definition object
+					return {
+						restrict: "AE",
+						//template: "<h1>{{messageA}}</h1>",
+						templateUrl: "/partials/home.tpl",
+
+						// post-link
+						link: function(scope, element, attrs, ctrl, transclude) {
+							scope.messageA = "It's Wed!";
+						}
+
+					};
+
+				})
+				.controller("MyCtrl", myCtrl);
+
+		</script>
+
 	</body>
 
 </html>
